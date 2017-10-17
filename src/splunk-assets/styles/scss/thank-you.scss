@@ -1,0 +1,24 @@
+.thank-you {
+  width: 500px;
+  margin: 0 auto;
+  table {
+    width:100%;
+    tr td:first-child {
+      text-align:right;
+      padding-top:10px
+    }
+    tr td:last-child {
+      padding-left:20px;
+      text-align:left;
+    }
+  }
+  input {
+    width: 100%;
+    margin-top:10px;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    font-size:18px;
+    display: inline-block;
+  }
+}

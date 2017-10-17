@@ -1,0 +1,52 @@
+.indicators-row {
+  position: relative;
+  z-index: 2;
+  background-color: #fff; }
+
+.indicators-lines {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  left: 12%;
+  height: 2px;
+  margin-bottom: 45px;
+  margin-top: 20px; }
+  .indicators-lines td {
+    position: relative;
+    width: 25%;
+    background-color: #cccccc; }
+    .indicators-lines td .fill {
+      background-color: #65a637;
+      position: absolute;
+      height: 100%;
+      width: 0px;
+      transition: width .5s; }
+    .indicators-lines td.selected .fill {
+      width: 100%; }
+    .indicators-lines td:last-child {
+      background-color: transparent; }
+      .indicators-lines td:last-child.selected .fill {
+        width: 0px; }
+  .indicators-lines .splunk-icon-container {
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    background-color: #fff;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid #cccccc;
+    background-color: #fff;
+    transition: border .5s, color .5s; }
+    .indicators-lines .splunk-icon-container .splunk-icon {
+      color: #65a637;
+      position: relative;
+      top: 4px;
+      left: 0px;
+      opacity: 0;
+      transition: opacity .5s; }
+      .indicators-lines .splunk-icon-container .splunk-icon.show {
+        opacity: 1; }
+    .indicators-lines .splunk-icon-container.selected {
+      border: 2px solid #65a637; }

@@ -1,0 +1,146 @@
+{
+  "selectedScene" : 0,
+  "title" : "HEADING.",
+  "subtitle" : "Critical Incident Event Calculator",
+  "calculator" : {
+    "title" : "Annual cost of CIEs",
+    "text" : "Bla blah"
+  },
+  "scenes" : [
+    {
+      "id" : 0,
+      "type" : "multi-options",
+      "title" : "Select a currency to begin",
+      "selectedItem" : null,
+      "buttonString" : "Next",
+      "action" : "next",
+      "items" : [
+        {
+          "id" : 0,
+          "title" : "USD",
+          "icon" : "icon-us-dollar",
+          "multiplier" : 1
+        },
+        {
+          "id" : 1,
+          "title" : "EUR",
+          "icon" : "icon-euro",
+          "multiplier" : 1.7
+        },
+        {
+          "id" : 2,
+          "title" : "GBP",
+          "icon" : "icon-uk-pound",
+          "multiplier" : 89
+        },
+        {
+          "id" : 3,
+          "title" : "JPY",
+          "icon" : "icon-jp-yen",
+          "multiplier" : 56
+        }
+      ]
+    },
+    {
+      "id" : 1,
+      "type" : "multi-options",
+      "title" : "Choose your Industry",
+      "selectedItem" : null,
+      "buttonString" : "Next",
+      "action" : "next",
+      "items" : [
+        {
+          "id" : 0,
+          "title" : "Public Sector",
+          "icon" : "icon-public-sector",
+          "multiplier" : 87
+        },
+        {
+          "id" : 1,
+          "title" : "Finance",
+          "icon" : "icon-finance",
+          "multiplier" : 43
+        },
+        {
+          "id" : 2,
+          "title" : "Manufacturing",
+          "icon" : "icon-manufacturing",
+          "multiplier" : 89
+        },
+        {
+          "id" : 3,
+          "title" : "Commercial",
+          "icon" : "icon-commercial",
+          "multiplier" : 56
+        },
+        {
+          "id" : 4,
+          "title" : "Transport",
+          "icon" : "icon-transportation",
+          "multiplier" : 12
+        },
+        {
+          "id" : 5,
+          "title" : "Retail",
+          "icon" : "icon-retail",
+          "multiplier" : 34
+        }
+      ]
+    },
+    {
+      "id" : 2,
+      "type" : "multi-options",
+      "title" : "​Number of employees globally",
+      "selectedItem" : null,
+      "buttonString" : "Next",
+      "action" : "next",
+      "items" : [
+        {
+          "id" : 0,
+          "title" : "Less than 3k",
+          "icon" : "icon-users-small",
+          "multiplier" : 2235
+        },
+        {
+          "id" : 1,
+          "title" : "3-5k",
+          "icon" : "icon-users-medium",
+          "multiplier" : 6343
+        },
+        {
+          "id" : 2,
+          "title" : "More than 5k",
+          "icon" : "icon-users-big",
+          "multiplier" : 8765
+        }
+      ]
+    },
+    {
+      "id" : 3,
+      "type" : "number-input",
+      "title" : "Tell us about Your",
+      "buttonString" : "Next",
+      "action" : "next",
+      "items" : [
+        {
+          "id" : 0,
+          "title" : "Number of critical IT events",
+          "subtitle" : "Per Month",
+          "value" : "0"
+        },
+        {
+          "id" : 1,
+          "title" : "Current Mean-Time-To-Resolution (MTTR)",
+          "subtitle" : "Hours",
+          "value" : "0"
+        },
+        {
+          "id" : 2,
+          "title" : "Time spent on root cause analytics",
+          "subtitle" : "Hours",
+          "value" : "0"
+        }
+      ]
+    }
+  ]
+}

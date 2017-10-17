@@ -1,0 +1,40 @@
+.multi-option {
+  transition: transform .45s, opacity .2s; }
+  .multi-option .flexcontainer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+
+.multi-option-item {
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  color: #72777a;
+  font-weight: bold; }
+  .multi-option-item .title {
+    font-size: 14px; }
+  .multi-option-item .splunk-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #72777a; }
+  .multi-option-item.selected, .multi-option-item:hover {
+    color: #65A637;
+    transition: color .5s ease; }
+    .multi-option-item.selected .splunk-icon, .multi-option-item:hover .splunk-icon {
+      color: #65A637;
+      transition: color .5s ease; }
+
+@media (min-width: 768px) {
+  .multi-option-item .splunk-icon {
+    font-size: 70px; }
+  .multi-option-item .title {
+    font-size: 18px; } }
+
+@media (max-width: 500px) {
+  .multi-option-item .splunk-icon {
+    font-size: 40px; }
+  .multi-option-item .title {
+    font-size: 11px; } }

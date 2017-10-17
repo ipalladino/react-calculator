@@ -1,0 +1,53 @@
+@import "includes.scss";
+
+.number-input {
+  @include animate-scene();
+  .flexcontainer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  input {
+    margin-top:10px;
+    height: auto;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    font-size:18px;
+    &:focus {
+      transition: border-color .5 ease;
+      border-color: #65A637;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      outline-color: #65A637;
+    }
+  }
+}
+.number-input-items {
+  padding-left:30px;
+  padding-right:30px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom:16px;
+  .number-input-item {
+    width:26%;
+    .title {
+      min-height: 50px;
+      font-weight: 400;
+    }
+    input {
+      margin-bottom:5px;
+    }
+    .item-subtitle {
+      font-weight: lighter;
+    }
+    &.selected {
+      background-color: pink;
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .number-input-items {
+    font-size:14px;
+  }
+}

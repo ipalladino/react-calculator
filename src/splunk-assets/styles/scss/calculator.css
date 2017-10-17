@@ -1,0 +1,10 @@
+.calculator {
+  transition: transform .45s, opacity .2s; }
+  .calculator .money {
+    font-weight: bold;
+    color: #65a637; }
+  .calculator .main-info p {
+    padding-bottom: 15px;
+    font-size: 18px; }
+  .calculator .splunk-btn {
+    margin-top: 15px; }

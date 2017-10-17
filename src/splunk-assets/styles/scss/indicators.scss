@@ -1,0 +1,70 @@
+.indicators-row {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.indicators-lines {
+  position: relative;
+  width:100%;
+  z-index: 1;
+  left:12%;
+  height: 2px;
+  margin-bottom:45px;
+  margin-top:20px;
+  td {
+    position: relative;
+    width: 25%;
+    background-color: #cccccc;
+    .fill {
+      background-color: #65a637;
+      position: absolute;
+      height: 100%;
+      width:0px;
+      transition: width .5s;
+    }
+    &.selected {
+      //background-color: #65a637;
+      .fill {
+        width:100%;
+      }
+    }
+    &:last-child {
+      background-color: transparent;
+      &.selected {
+        //background-color: #65a637;
+        .fill {
+          width:0px;
+        }
+      }
+    }
+  }
+  .splunk-icon-container {
+    //cursor: pointer;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    .splunk-icon {
+      color:#65a637;
+      position: relative;
+      top:4px;
+      left:0px;
+      opacity: 0;
+      transition: opacity .5s;
+      &.show {
+        opacity: 1;
+      }
+    }
+    background-color:#fff;
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid #cccccc;
+    background-color: #fff;
+    transition : border .5s, color .5s;
+    &.selected {
+      border: 2px solid #65a637;
+    }
+  }
+}

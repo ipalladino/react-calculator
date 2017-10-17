@@ -1,0 +1,3 @@
+@mixin animate-scene() {
+  transition: transform .45s, opacity .2s;
+}
